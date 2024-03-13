@@ -4,6 +4,10 @@ import { SimplePokemon } from '../../../pokemons/interfaces/simple-pokemon';
 
 
 
+export const metadata = {
+ title: '151 Pokémons',
+ description: '151 Pokémons',
+};
 
 
 const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => {
