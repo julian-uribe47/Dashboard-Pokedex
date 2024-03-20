@@ -1,6 +1,8 @@
+import { FavoritePokemons } from '@/pokemons';
 import { PokemonGrid } from '../../../pokemons/components/PokemonGrid';
 import { PokemonsResponse } from '../../../pokemons/interfaces/pokemons-response';
 import { SimplePokemon } from '../../../pokemons/interfaces/simple-pokemon';
+import { IoHeartOutline } from 'react-icons/io5';
 
 
 
@@ -10,8 +12,6 @@ export const metadata = {
 };
 
 
-
-
 export default async function PokemonsPage() {
 
     return (
@@ -19,8 +19,13 @@ export default async function PokemonsPage() {
 
             <span className=" text-3xl my-2">Pokémons favoritos <small className=' text-blue-600'>Global State</small></span>
             
-            <PokemonGrid pokemons={[]} />
+            {/* <PokemonGrid pokemons={[]} /> */}
+            <FavoritePokemons />
+            
 
         </div>
     );
 }
+
+
+
